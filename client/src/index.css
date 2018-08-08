@@ -1,0 +1,153 @@
+html {
+  background-color: rgb(255, 255, 255);
+  /* background-color: #1D566E; */
+  /* font-size: 2vw; */
+}
+body {
+  height: 100%;
+}
+
+button {
+  background-color: #45eba5;
+  border-radius: 5px;
+  color: #ffffff;
+  font: 1 em !important;
+  margin: 2em auto;
+  width: 30%;
+  height: 40px;
+}
+
+form {
+  widows: 80%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+label,
+input {
+  padding: 0px;
+  display: block;
+  width: 50%;
+}
+
+label {
+  padding: 0px !important;
+  margin: 0.5em;
+}
+
+input {
+  padding: 1%;
+}
+
+.form-ptag {
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #000000;
+}
+
+.container {
+  width: 960px;
+  margin: 0% auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 0% auto;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Grid measurements:
+ *
+ *   960px wide including 12 gutters (half gutters on both edges)
+ *
+ *   60px columns (12)
+ *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
+ *
+ *
+ *   For smaller screens, we always want 20px of padding on either side,
+ *   so 960 + 20 + 20 => 1000px
+ *
+ **/
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3,
+.col-4,
+.col-6,
+.col-12 {
+  width: 100%;
+}
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: calc(1em + 1vw);
+  }
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* 4 columns, 4/12 in % */
+  .col-4 {
+    width: 33.333333%;
+  }
+
+  /* 6 columns, 6/12 in % */
+  .col-6 {
+    width: 50%;
+  }
+
+  /* 12 columns, 12/12 in % */
+  .col-12 {
+    width: 100%;
+  }
+}

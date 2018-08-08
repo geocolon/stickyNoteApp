@@ -1,0 +1,57 @@
+h2 {
+  text-align: center;
+}
+.image-style {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .p-tag {
+    font-size: 1rem;
+    margin: 0px;
+  }
+}
+
+.title {
+  font-size: 1em;
+  margin: 0%;
+}
+.p-tag {
+  font-size: 0.7em;
+  margin: 0px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.delete-btn {
+  background-color: rgb(27, 27, 27);
+  border-radius: 0px;
+  border: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  font-family: 'Give You Glory', cursive;
+  font-size: 0.5em;
+}
+.card-style {
+  text-align: center;
+  word-wrap: break-word;
+  padding: 1%;
+  width: 100%;
+  font-family: 'Give You Glory', cursive;
+  background-color: #ffdd26;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.list-wrapper {
+  margin: 5% 5%;
+}
