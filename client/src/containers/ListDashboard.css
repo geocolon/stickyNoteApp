@@ -8,23 +8,6 @@ h2,p{
   margin: 0px auto;
 }
 
-/* .list-wrapper {
-  margin: 1% 1%;
-  padding: 10px;
-  
-} */
-
-@media screen and (max-width: 600px) {
-  .title {
-    font-size: 2rem;
-  }
-  .p-tag {
-    overflow: scroll;
-    font-size: 1rem;
-    margin: 0px;
-  }
-}
-
 .title {
   font-size: 1em;
   margin: 0%;
@@ -40,25 +23,22 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+ 
 .delete-btn {
   background-color: rgb(27, 27, 27);
   border-radius: 0px;
   border: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: auto;
   font-size: 0.5em;
 }
 .card-style {
-  
   text-align: center;
   word-wrap: break-word;
-  padding: 1%;
+  margin-bottom: 20px;
   width: 100%;
-  height: 10em;
   background-color: #ffdd26;
-  max-height: 45%;
   overflow: hidden;
   overflow-y: scroll;
   /* Firefox */
@@ -69,14 +49,16 @@ ul {
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
-/* .list-wrapper {
-  margin: 1% auto;
-  padding: 10px;
-  
-} */
-
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 640px) {
   .card-style {
-    width: 10em;
+    height: 200px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .p-tag {
+    overflow: scroll;
+    font-size: 1rem;
+    margin: 0px;
   }
 }

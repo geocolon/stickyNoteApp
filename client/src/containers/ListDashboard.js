@@ -23,7 +23,7 @@ class ListDashboard extends React.Component {
     let lists;
     if (this.props.lists) {
       lists = this.props.lists.map((list, index) => (
-        <div className="col-3 list-wrapper" key={list.id}>
+        <div className="col-3" key={list.id}>
           <div className="card-style">
             <div>
               <p>{list.name}</p>
@@ -43,7 +43,7 @@ class ListDashboard extends React.Component {
             </button>
           </div>
         </div>
-      ));
+              ));
     }
 
     return (

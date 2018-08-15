@@ -56,7 +56,11 @@ export class Dashboard extends React.Component {
             </form>
           </div>
         </div>
+        <div className="">
+        <div className="row">
         <ListDashboard />
+        </div>
+        </div>
       </div>
     );
   }
