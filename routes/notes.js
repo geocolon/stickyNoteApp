@@ -90,7 +90,6 @@ router.put('/:id', [jwtAuth, jsonParser], (req, res) => {
     console.error(message);
     return res.status(400).send(message);
   }
-  console.log(`Updating note list item \`${req.params.id}\``);
   Note.findByIdAndUpdate(req.params.id, {
     name: req.body.name,
     text: req.body.text

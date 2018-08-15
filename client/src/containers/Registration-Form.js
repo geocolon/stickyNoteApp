@@ -10,7 +10,6 @@ const matchesPassword = matches('password');
 
 class RegistrationForm extends React.Component {
   onSubmit(values) {
-    console.log('This is the values', values);
     const { username, password, firstname, lastname } = values;
     const user = { username, password, firstname, lastname };
     return this.props

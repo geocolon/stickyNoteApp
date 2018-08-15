@@ -38,8 +38,6 @@ const localStrategy = new LocalStrategy((username, password, callback) => {
       return callback(err, false);
     });
 });
-console.log('This is JWT_SECRET ', JWT_SECRET);
-// console.log('This is ExtractJwt ',ExtractJwt.fromAuthHeaderWithScheme('Bearer'));
 const jwtStrategy = new JwtStrategy(
   {
     secretOrKey: JWT_SECRET,

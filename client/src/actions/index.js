@@ -12,7 +12,6 @@ export const fetchPost = () => dispatch => {
       return res.json();
     })
     .then(users => {
-      console.log('This is in the', users);
       dispatch(setLoginSuccess(users));
     });
 };

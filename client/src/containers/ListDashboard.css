@@ -36,7 +36,6 @@ ul {
   padding-left: 10px;
   padding-right: 10px;
   width: auto;
-  font-family: 'Give You Glory', cursive;
   font-size: 0.5em;
 }
 .card-style {
@@ -44,7 +43,6 @@ ul {
   word-wrap: break-word;
   padding: 1%;
   width: 100%;
-  font-family: 'Give You Glory', cursive;
   background-color: #ffdd26;
   margin-bottom: 20px;
   -webkit-box-shadow: 0 8px 6px -6px black;

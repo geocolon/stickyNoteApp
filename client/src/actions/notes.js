@@ -83,7 +83,6 @@ export const createNotes = (note, title) => (dispatch, getState) => {
     .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
     .then(() => dispatch(fetchNote()))
-    .then(console.log('This is the actions api...'))
     .then(() => dispatch(finishPost()))
     .catch(err => {
       const { reason, message, location } = err;

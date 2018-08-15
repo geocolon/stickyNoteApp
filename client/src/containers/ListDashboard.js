@@ -11,20 +11,15 @@ let listMargin = {
 class ListDashboard extends React.Component {
   componentDidMount() {
     this.props.dispatch(fetchNote());
-    // console.log('this is props',this.props);
   }
-  // handleClick = () => {
-  //     console.log('This is where I will place the delete',this.props);
-  //     console.log('this is:', this.props.lists[0].id);
-  //     // this.props.dispatch(deleteNote(this.list.id));
-  //   }
+  
 
   render() {
     let lists;
     if (this.props.lists) {
       lists = this.props.lists.map((list, index) => (
         <div className="col-3" key={list.id}>
-          <div className="card-style">
+          <a className="card-style">
             <div>
               <p>{list.name}</p>
             </div>
@@ -41,7 +36,7 @@ class ListDashboard extends React.Component {
             >
               DELETE
             </button>
-          </div>
+          </a>
         </div>
       ));
     }

@@ -28,6 +28,11 @@ class Nav extends React.Component {
                 <Link to="/login">Login</Link>
               </li>
             )}
+            {this.props.loggedIn && (
+              <li className="login-status">
+                <Link to="/dashboard">Dashboard</Link>
+              </li>
+            )}
             <li>
               <Link to="/about">About</Link>
             </li>
@@ -42,7 +47,6 @@ class Nav extends React.Component {
 }
 
 const mapStateToProps = state => {
-  // console.log('This is the state on Reg page',state)
   return {
     loggedIn: state.auth.currentUser,
   };
