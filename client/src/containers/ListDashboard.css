@@ -1,8 +1,11 @@
-h2 {
-  text-align: center;
+h2,p{
+  font-size:100%;
+  font-weight:normal;
 }
 .image-style {
   width: 100%;
+  display: block;
+  margin: 0px auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -10,6 +13,7 @@ h2 {
     font-size: 2rem;
   }
   .p-tag {
+    overflow: scroll;
     font-size: 1rem;
     margin: 0px;
   }
@@ -20,8 +24,10 @@ h2 {
   margin: 0%;
 }
 .p-tag {
-  font-size: 0.7em;
   margin: 0px;
+  width: 100%;
+  /* padding-right: 17px; Increase/decrease this value for cross-browser compatibility */
+  /* box-sizing: content-box; So the width will be 100% + 17px */
 }
 ul {
   list-style-type: none;
@@ -39,17 +45,25 @@ ul {
   font-size: 0.5em;
 }
 .card-style {
+  
   text-align: center;
   word-wrap: break-word;
   padding: 1%;
-  width: 100%;
+  width: 10em;
+  height: 10em;
   background-color: #ffdd26;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  max-height: 45%;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
 .list-wrapper {
-  margin: 5% 5%;
+  margin: 2% 2%;
+  
 }
