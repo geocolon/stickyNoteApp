@@ -1,5 +1,5 @@
 # Sticky Note
-![Sticky Note Desktop] (../images/Sticky-Note.png)
+![Sticky Note Desktop](../images/Sticky-Note.png)
 
 I wanted to create an application that mimic post it notes. I love using post it notes in my work to orient myself on a project but I always find that they are easily lost and usually in one place. Making this application solved having my notes saved to the cloud so I can have access to our post it notes.
 
