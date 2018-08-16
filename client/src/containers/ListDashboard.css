@@ -39,6 +39,7 @@ ul {
   word-wrap: break-word;
   margin-bottom: 20px;
   width: 100%;
+  max-height: 250px;
   overflow: hidden;
   overflow-y: scroll;
 
