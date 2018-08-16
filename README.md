@@ -1,5 +1,5 @@
 # Sticky Note
-<img src="/image/Sticky-Note.png" alt="Sticky Note Desktop" height="42" width="100%">
+<img src="/image/Sticky-Note.png" alt="Sticky Note Desktop" width="100%">
 
 I wanted to create an application that mimic post it notes. I love using post it notes in my work to orient myself on a project but I always find that they are easily lost and usually in one place. Making this application solved having my notes saved to the cloud so I can have access to our post it notes.
 
