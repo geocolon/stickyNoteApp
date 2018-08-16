@@ -1,11 +1,13 @@
 # Sticky Note
+<img src="/image/Sticky-Note.png" alt="Sticky Note Desktop" height="42" width="100%">
+
 I wanted to create an application that mimic post it notes. I love using post it notes in my work to orient myself on a project but I always find that they are easily lost and usually in one place. Making this application solved having my notes saved to the cloud so I can have access to our post it notes.
 
 Please go to the deployed version here. => <a href="https://new-stickynote.herokuapp.com/">Sticky Note</a>
 
 ### How to use it.
 
-Please create your own account at <a href="https://new-stickynote.herokuapp.com/">Sticky Note</a> for full access to try it out for yourself. Check out the demo account.
+Please create your own account at <a href="https://new-stickynote.herokuapp.com/">Sticky Note</a> for full access to try it out for yourself. Check out the demo account. 
 
 Username: mkim
 Password: abcdef1234
