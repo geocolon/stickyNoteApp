@@ -8,16 +8,6 @@ h2,p{
   margin: 0px auto;
 }
 
-.title {
-  font-size: 1em;
-  margin: 0%;
-}
-.p-tag {
-  margin-bottom: 10px;
-  width: 100%;
-  /* padding-right: 17px; Increase/decrease this value for cross-browser compatibility */
-  /* box-sizing: content-box; So the width will be 100% + 17px */
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -26,21 +16,45 @@ ul {
  
 .delete-btn {
   background-color: rgb(27, 27, 27);
+  text-align: center;
   border-radius: 0px;
   border: 0px;
+  margin-top: 50px;
   padding-left: 5px;
   padding-right: 5px;
   width: auto;
-  font-size: 0.5em;
 }
-.card-style {
+
+.title-sticky {
+  font-size: 3rem;
+  font-family: 'Reenie Beanie', cursive;
+}
+.p-tag {
+  font-size: 1.7rem;
+  margin: 0px;
+}
+.col-3 .card-style {
   text-align: center;
+  font-size: 2rem;
   word-wrap: break-word;
   margin-bottom: 20px;
   width: 100%;
-  background-color: #ffdd26;
   overflow: hidden;
   overflow-y: scroll;
+
+  color:#000;
+  background:#ffc;
+  
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
   /* Firefox */
   -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
   /* Safari+Chrome */
@@ -49,16 +63,61 @@ ul {
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
+.col-3:nth-child(even) .card-style{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  background:#cfc;
+  border: #cfc solid 3px;
+  top:5px;
+}
+
+.col-3:nth-child(3n) .card-style{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  background:#ccf;
+  border: #ccf solid 3px;
+  top:-5px;
+} 
+
+.col-3:nth-child(5n) .card-style{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  border: #ffc solid 3px;
+  top:-10px;
+}
+
+
 @media screen and (min-width: 640px) {
   .card-style {
-    height: 200px;
+    height: 250px;
+    margin-bottom: 40px;
   }
-  .title {
-    font-size: 2rem;
+  .title-sticky {
+    font-size: 50%;
   }
   .p-tag {
     overflow: scroll;
-    font-size: 1rem;
+    font-size: 30%;
     margin: 0px;
   }
+  .delete-btn {
+    font-size: 0.5rem;
+  }
+  .col-3 .card-style:hover,.col-3 .card-style:focus{
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+  }
+  
 }

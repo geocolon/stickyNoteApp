@@ -26,7 +26,7 @@ class ListDashboard extends React.Component {
         <div className="col-3" key={list.id}>
           <div className="card-style">
             <div>
-              <p>{list.name}</p>
+              <h3 className="title-sticky">{list.name}</h3>
             </div>
             {list.text.indexOf('http') > -1 ? (
               <img className="image-style" src={list.text} alt={list.name} />
