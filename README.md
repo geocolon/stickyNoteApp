@@ -12,6 +12,9 @@ Please create your own account at <a href="https://new-stickynote.herokuapp.com/
 Username: mkim
 Password: abcdef1234
 
+Sticky Note app saves your text and image notes in the style of Post-it notes.
+
+
 
 ### Installing
 

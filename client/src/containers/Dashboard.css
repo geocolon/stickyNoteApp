@@ -1,8 +1,8 @@
 .dash-background {
   background:#666;
 
-  /* background-color: url('/images/cork-board-background.jpg'); */
-  height: 100%;
+  /* background-image: url('/images/cork-board-background.jpg'); */
+  height: 100vh;
    
 }
 button {  

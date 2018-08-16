@@ -1,0 +1,46 @@
+.header-title {
+    font-family: 'Reenie Beanie', cursive !important;
+    /* font-size: 1rem; */
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.paper {
+    /* background-color: rgba(150, 150, 150, 0.8); */
+    margin: 2em auto;
+    height: 100%;
+    padding:  10px 10px 50px 10px;
+    max-width: 100vh;
+    background: #ffc;
+    box-shadow:
+      /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 10px 0 -5px #ccf,
+      /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+       /* The third layer */
+      0 20px 0 -10px #cfc,
+      /* The third layer shadow */
+      0 20px 1px -9px rgba(222, 225, 160, 0.15);
+      /* Padding for demo purposes */
+      
+}
+
+
+
+.paper::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+
+  .paper::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }

@@ -5,7 +5,7 @@ import Login from './components/login-page';
 import DashboardPage from './components/dashboard-page';
 import Logout from './containers/Logout';
 // import About from './components/About';
-// import Landing from './components/Landing';
+import Landing from './components/Landing';
 import ListDashboard from './containers/ListDashboard';
 import RegistrationPage from './components/registration-page';
 import { refreshAuthToken } from './actions/auth';
@@ -43,13 +43,13 @@ export class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Route exact path="/" component={RegistrationPage} />
+        <Route exact path="/signup" component={RegistrationPage} />
         <Route exact path="/dashboard" component={DashboardPage} />
         <Route exact path="/listdashboard" component={ListDashboard} />
         <Route exact path="/logout" component={Logout} />
         <Route exact path="/login" component={Login} />
         {/* <Route exact path="/about" component={About} /> */}
-        {/* <Route exact path="/" component={Landing} /> */}
+        <Route exact path="/" component={Landing} />
       </div>
     );
   }

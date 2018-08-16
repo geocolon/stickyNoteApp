@@ -12,14 +12,14 @@ class Nav extends React.Component {
     return (
       <header className="header">
         <nav>
-        <Link className="logo" to="/">Sticky Note</Link>
+        <Link className="logo" to="/"><strong>Sticky Note</strong></Link>
 
           <div className="header-right">
-                    {/* <Link className="login-status" to="/">Home</Link> */}
+                    <Link className="login-status" to="/">Home</Link>
                     {/* <a href="#about"><Link to="/about">About</Link></a> */}
                     {this.props.loggedIn && <Link to="/dashboard">Dashboard</Link> }
                     {!this.props.loggedIn && <Link to="/login">Login</Link> }
-                    {!this.props.loggedIn && <Link to="/">Sign Up</Link> }
+                    {!this.props.loggedIn && <Link to="/signup">Sign Up</Link> }
                     <Logout />
                 </div>
         </nav>

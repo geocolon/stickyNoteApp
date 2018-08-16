@@ -1,9 +1,9 @@
 * {
-  font-family: sans-serif;
   box-sizing: border-box;
 }
 
 html, body {
+  font-family: sans-serif;
   background-color: lightgray;
   height: 100%;
   margin: -1px;

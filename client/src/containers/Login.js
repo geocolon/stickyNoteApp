@@ -20,7 +20,7 @@ export class LoginForm extends React.Component {
       );
     }
     return (
-      <div className="container background-image">
+      <div className="background-image">
         <form
           className="login-form form-ptag"
           onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}

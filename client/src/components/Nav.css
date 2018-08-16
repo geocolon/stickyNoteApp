@@ -1,4 +1,4 @@
-#logout {
+.logout {
   float: left;
   color: black;
   text-align: center;
@@ -7,6 +7,11 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+}
+
+
+.logo {
+  font-family: 'Reenie Beanie', cursive;
 }
 
 .header {
