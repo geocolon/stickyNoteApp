@@ -1,7 +1,9 @@
 .dash-background {
   background:#666;
+
   /* background-color: url('/images/cork-board-background.jpg'); */
   height: 100%;
+   
 }
 button {  
   font-size: 1rem;
@@ -31,9 +33,11 @@ form {
 
 .form-background {
   color: aliceblue;
+  max-width: 50%;
+  border-radius: 10px;
   background: linear-gradient(rgba(50, 50, 50, 0.45), rgba(50, 50, 50, 0.45)),
     url('/images/free-vector-watercolor-paper-texture.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 2%;
+  margin: 2% auto;
 }
