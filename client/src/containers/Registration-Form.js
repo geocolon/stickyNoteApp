@@ -3,7 +3,6 @@ import { Field, reduxForm, focus } from 'redux-form';
 import { registerUser } from '../actions/users';
 import { login } from '../actions/auth';
 import Input from './input';
-import './Registration-Form.css';
 import { required, nonEmpty, matches, length, isTrimmed } from '../validators';
 const passwordLength = length({ min: 10, max: 72 });
 const matchesPassword = matches('password');
@@ -21,7 +20,7 @@ class RegistrationForm extends React.Component {
     return (
       <div className="container">
         <form
-          className="login-form"
+          className="login-form form-ptag"
           onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
         >
           <label htmlFor="firstname">First name</label>

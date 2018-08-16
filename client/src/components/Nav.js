@@ -10,7 +10,7 @@ class Nav extends React.Component {
       // document.getElementsByClassName("login-status").style.display="none";
     }
     return (
-      <div className="header">
+      <header className="header">
         <nav>
         <Link className="logo" to="/">Sticky Note</Link>
 
@@ -23,7 +23,7 @@ class Nav extends React.Component {
                     <Logout />
                 </div>
         </nav>
-        </div>
+        </header>
     );
   }
 }

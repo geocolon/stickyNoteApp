@@ -20,9 +20,9 @@ export class LoginForm extends React.Component {
       );
     }
     return (
-      <div className="container">
+      <div className="container background-image">
         <form
-          className="login-form"
+          className="login-form form-ptag"
           onSubmit={this.props.handleSubmit(values => this.onSubmit(values))}
         >
           {error}
