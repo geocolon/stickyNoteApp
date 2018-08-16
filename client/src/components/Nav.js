@@ -10,38 +10,20 @@ class Nav extends React.Component {
       // document.getElementsByClassName("login-status").style.display="none";
     }
     return (
-      <div>
-        <div className="mobile-nav-space" />
+      <div className="header">
         <nav>
-          <button className="hamburger" />
-          <ul className="topnav">
-            <li>
-              <Logout />
-            </li>
-            {!this.props.loggedIn && (
-              <li className="login-status">
-                <Link to="/signup">Sign Up</Link>
-              </li>
-            )}
-            {!this.props.loggedIn && (
-              <li className="login-status">
-                <Link to="/login">Login</Link>
-              </li>
-            )}
-            {this.props.loggedIn && (
-              <li className="login-status">
-                <Link to="/dashboard">Dashboard</Link>
-              </li>
-            )}
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
+        <Link className="logo" to="/">Sticky Note</Link>
+
+          <div className="header-right">
+                    {/* <Link className="login-status" to="/">Home</Link> */}
+                    {/* <a href="#about"><Link to="/about">About</Link></a> */}
+                    {this.props.loggedIn && <Link to="/dashboard">Dashboard</Link> }
+                    {!this.props.loggedIn && <Link to="/login">Login</Link> }
+                    {!this.props.loggedIn && <Link to="/">Sign Up</Link> }
+                    <Logout />
+                </div>
         </nav>
-      </div>
+        </div>
     );
   }
 }
