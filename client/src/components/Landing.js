@@ -13,10 +13,10 @@ class Landing extends Component {
         <div className="row paper">
           <main className="col-12">
           
-            <div className="col-6">
-            <h1 className="header-title">
+            <div className="col-3">
+            <h2 className="header-title">
               <strong>Sticky Note</strong>
-            </h1>
+            </h2>
             </div>
             <div className="col-6">
               <h2 className="header-title">

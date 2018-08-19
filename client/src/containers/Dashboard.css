@@ -1,8 +1,9 @@
 .dash-background {
   background:#666;
 
-  /* background-image: url('/images/cork-board-background.jpg'); */
-  height: 100vh;
+  background-image: url('/images/cork-board-background.jpg');
+  background-repeat: repeat;  
+  min-height: 100%;
    
 }
 button {  
