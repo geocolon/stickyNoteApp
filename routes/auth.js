@@ -5,13 +5,13 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 
-const { JWT_SECRET, JWT_EXPIRY } = require('../config');
+const keys = require('../config/keys');
 const router = express.Router();
 
 const createAuthToken = function(user) {
-  return jwt.sign({ user }, JWT_SECRET, {
+  return jwt.sign({ user }, keys.JWT_SECRET, {
     subject: user.username,
-    expiresIn: JWT_EXPIRY,
+    expiresIn: keys.JWT_EXPIRY,
     algorithm: 'HS256',
   });
 };

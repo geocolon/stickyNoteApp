@@ -3,7 +3,7 @@
 
   background-image: url('/images/cork-board-background.jpg');
   background-repeat: repeat;  
-  min-height: 100%;
+  min-height: 100vh;
    
 }
 button {  

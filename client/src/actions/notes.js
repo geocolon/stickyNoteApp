@@ -1,4 +1,3 @@
-import { API_BASE_URL } from '../config';
 import { normalizeResponseErrors } from './utils';
 import { SubmissionError } from 'redux-form';
 
@@ -32,7 +31,7 @@ export const deleteNoteRequest = () => ({
 export const fetchNote = () => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
   // const userName = getState().auth.currentUser.username;
-  return fetch(`${API_BASE_URL}/notes`, {
+  return fetch(`/api/notes`, {
     method: 'GET',
     headers: {
       Authorization: `Bearer ${authToken}`,
@@ -51,7 +50,7 @@ export const fetchNote = () => (dispatch, getState) => {
 
 export const deleteNote = id => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
-  fetch(`${API_BASE_URL}/notes/${id}`, {
+  fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       Authorization: `Bearer ${authToken}`,
@@ -72,7 +71,7 @@ export const createNotes = (note, title) => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
   const userName = getState().auth.currentUser.username;
   dispatch(startPosting());
-  return fetch(`${API_BASE_URL}/notes`, {
+  return fetch(`/api/notes`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

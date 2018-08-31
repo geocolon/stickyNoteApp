@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const cors = require('cors');
 const morgan = require('morgan');
 const passport = require('passport');
 
@@ -11,17 +10,25 @@ const authRouter = require('./routes/auth');
 const { localStrategy, jwtStrategy } = require('./passport/local');
 
 const { dbConnect } = require('./db-mongoose');
+const PORT = process.env.PORT || 8080;
 
 const app = express();
-// Mount routers
-app.use(cors());
+
+app.use(
+  morgan(process.env.NODE_ENV === 'production' ? 'common' : 'dev', {
+    skip: (req, res) => process.env.NODE_ENV === 'test',
+  }),
+);
+
+app.use(express.json());
 
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
-app.use('/api/', usersRouter);
+// Mount routers
+app.use('/api', usersRouter);
 app.use('/api/notes', notesRouter);
-app.use('/api/auth/', authRouter);
+app.use('/api/auth', authRouter);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
@@ -32,17 +39,10 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.use(
-  morgan(process.env.NODE_ENV === 'production' ? 'common' : 'dev', {
-    skip: (req, res) => process.env.NODE_ENV === 'test',
-  }),
-);
+let server;
 
-app.use(express.json());
-
-const PORT = process.env.PORT || 8080;
-
-function runServer() {
+function runServer(port = PORT) {
+  console.log('Run server!');
   const server = app
     .listen(PORT, () => {
       console.info(`App listening on port ${server.address().port}`);
@@ -53,9 +53,23 @@ function runServer() {
     });
 }
 
+function closeServer() {
+  return new Promise((resolve, reject) => {
+    console.log('Closing server');
+    server.close(err => {
+      if (err) {
+        reject(err);
+        // so we don't also call `resolve()`
+        return;
+      }
+      resolve();
+    });
+  });
+}
+
 if (require.main === module) {
   dbConnect();
   runServer();
 }
 
-module.exports = { app };
+module.exports = { app, runServer, closeServer };
