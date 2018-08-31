@@ -51,7 +51,7 @@ export class Dashboard extends React.Component {
               />{' '}
               <br />
               <center>
-                <button className="submit_btn" type="submit">Submit</button>
+                <button type="submit">Submit</button>
               </center>
             </form>
           </div>
