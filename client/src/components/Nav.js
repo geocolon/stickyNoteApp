@@ -42,7 +42,7 @@ class Nav extends React.Component {
     <Link to="/"><li>Home</li></Link>
                     {/* <a href="#about"><Link to="/about">About</Link></a> */}
                     {this.props.loggedIn && <Link to="/dashboard"><li>Dashboard</li></Link> }
-                    {!this.props.loggedIn && <Link to="/login"><li>Login</li></Link> }
+                    {!this.props.loggedIn && <Link to="/login"><li>Log in</li></Link> }
                     {!this.props.loggedIn && <Link to="/signup"><li>Sign Up</li></Link> }
                     <Logout />
 

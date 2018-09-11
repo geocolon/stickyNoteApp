@@ -17,7 +17,7 @@ class RegistrationPage extends React.Component {
         <Nav />
         <RegistrationForm />
         <center>
-        <Link className="links" to="/login">Login</Link>
+        <Link className="links" to="/login">Log in</Link>
         </center>
       </div>
     );

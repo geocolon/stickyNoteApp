@@ -8,6 +8,10 @@ h2,p{
   margin: 0px auto;
 }
 
+.logo h1 {
+  font-size: 1.5rem;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -31,6 +35,9 @@ ul {
 }
 .p-tag {
   font-size: 1.7rem;
+  margin: 0px;
+  overflow: wrap;
+  font-size: 30%;
   margin: 0px;
 }
 .col-3 .card-style {
@@ -99,14 +106,13 @@ ul {
     height: 250px;
     margin-bottom: 40px;
   }
-  .title-sticky {
-    font-size: 50%;
+  .logo h1 {
+    font-size: 1.5rem;
   }
-  .p-tag {
-    overflow: scroll;
-    font-size: 30%;
-    margin: 0px;
+ .title-sticky {
+    font-size: 0.9rem;
   }
+
   .delete-btn {
     font-size: 0.5rem;
   }
