@@ -191,4 +191,7 @@ form {
   .links {
     max-width: 50%;
   }
+  p {
+    font-size: 0.8rem;
+}
 }
