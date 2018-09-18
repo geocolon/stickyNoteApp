@@ -1,5 +1,5 @@
 # Sticky Note
-![Sticky Note Desktop](https://user-images.githubusercontent.com/7282802/44223427-718d5e80-a13c-11e8-85eb-c5c295dfa2d5.png)
+![sticky note](https://user-images.githubusercontent.com/7282802/45657418-2e0d7380-ba9f-11e8-8650-27b11615fbd0.png)
 
 I wanted to create an application that mimic post it notes. I love using post it notes in my work to orient myself on a project but I always find that they are easily lost and usually in one place. Making this application solved having my notes saved to the cloud so I can have access to our post it notes.
 
